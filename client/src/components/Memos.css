@@ -1,0 +1,18 @@
+.container-fluid{
+	margin: 20px;
+}
+tr{
+	padding: 7px;
+}
+.td{
+	background-color: dodgerblue;
+	border: 1px solid white;
+	border-collapse: "collapse";
+	padding: 7px;
+	color: white;
+	margin: 4px;
+}
+.table{
+	margin: auto;
+	padding: 10px;
+}

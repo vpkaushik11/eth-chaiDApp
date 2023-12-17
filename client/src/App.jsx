@@ -5,11 +5,9 @@ import './App.css'
 import Memos from './components/Memos';
 import Buy from './components/Buy';
 import chai from './assets/chai.png'
+import CONTRACT_ADDR from '../private.json'
 
-import config from 'dotenv'
-config();
-const CONTRACT_ADDR = process.env.CONTRACT_ADDR;
-// require("dotenv").config();
+// const CONTRACT_ADDR = import.meta.env.CONTRACT_ADDR;
 
 function App() {
   const [state, setState] = useState({
@@ -20,6 +18,7 @@ function App() {
   const [account, setAccount] = useState('Not Connected');
   useEffect(() => {
     const template = async () => {
+      // const contractAddress = "0x986Bf8B27C5A069758810D7A18873653329223e5";
       const contractAddress = CONTRACT_ADDR;
       const contractABI = abi.abi;
       try {

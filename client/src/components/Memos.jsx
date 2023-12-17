@@ -18,7 +18,7 @@ const Memos = ({ state }) => {
 				<tbody>
 					{memos.map((memo) => {
 						return (
-							<tr key={memo.name}>
+							<tr className="tr" key={memo.name}>
 								<td	className="td" style={{width: "100px"}}>
 									{memo.name}
 								</td>
